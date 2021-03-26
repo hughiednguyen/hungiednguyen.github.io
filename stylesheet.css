@@ -1,0 +1,231 @@
+body {
+  /* background-color: #ffffffff; */
+  font-family: 'Consolas', 'monaco', 'monospace';
+  -webkit-font-smoothing: antialiased;
+  background: linear-gradient(#111111, #000000);
+  background-size: 2400% 2400%;
+
+  animation: bg-anim 10s ease infinite;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  color: #000;
+}
+
+
+h4 {
+  margin: 0.7em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+h5 {
+  margin: -1em;
+  font-size: 1.5em;
+  animation: icon-anim 20s alternate-reverse infinite;
+
+}
+
+.body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* End Non-Essential  */
+
+.pill {
+  height: 30em;
+  width: 15em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  /* border: 0.4em solid black; */
+  border-radius: 10em;
+  overflow: hidden;
+  /* -webkit-box-shadow: 0 0 150px rgba(255, 255, 255, 0.6), 0 0 150px rgba(255, 255, 255, 0.6); */
+  /* box-shadow: 0 0 150px rgba(255, 255, 255, 0.6), 0 0 150px rgba(255, 255, 255, 0.6); */
+  animation: glow 10s infinite alternate;
+}
+
+/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
+
+
+.pill-top {
+  background-color: #fafafa;
+  /* color: #FAFAFA; */
+  height: 14em;
+  width: 15em;
+  position: absolute;
+  top: 0em;
+  padding: 0em 0em;
+  text-align: center;
+}
+
+.text{
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+  
+  top: 50%; left: 50%; right: auto; bottom: auto;
+  transform: translate(-50%, -45%);
+  position: absolute;
+  animation: border 20s alternate-reverse infinite;
+
+}
+
+.name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* .pill-stripe {
+  background: repeating-linear-gradient(to right, rgb(255, 97, 97) 0%, rgb(7, 255, 7) 25%, rgb(70, 98, 255) 50%,rgb(7, 255, 7) 75%, rgb(255, 97, 97) 100%);
+  background-size: 200% auto;
+  animation: gradient 10s infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+
+  height: 0.3em;
+  width: 12em;
+  position: relative;
+  top: 11em;
+  text-align: center;
+} */
+
+.pill-bottom {
+  background-color: #FAFAFA;
+  height: 16.0em;
+  width: 15em;
+  position: absolute;
+  bottom: 0em;
+  padding: 0em 0em 0em 0em;
+  text-align: center;
+
+}
+
+
+
+.icons {
+  padding: 0.7em;
+  width: 100%;
+}
+
+
+i.fa-circle  {
+  animation: icon-anim 20s alternate-reverse infinite;
+
+  color: black;
+}
+
+.fa-spotify {
+  animation: icon-anim 20s alternate-reverse infinite;
+
+  /* animation: icon-anim 3s alternate infinite; */
+
+  color: black;
+}
+
+.fa-github {
+  animation: icon-anim 20s alternate-reverse infinite;
+
+  /* animation: icon-anim 3s alternate infinite; */
+
+  color: black;
+}
+
+/* @keyframes gradient { 
+  0%   { 
+    background-position: 0 0; 
+  }
+  100% { 
+    background-position: -200% 0; 
+  }
+} */
+
+@keyframes bg-anim {
+  0% {
+    background-position: 49% 0%
+  }
+
+  50% {
+    background-position: 52% 100%
+  }
+
+  100% {
+    background-position: 49% 0%
+  }
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 130px rgba(255, 255, 255, 0.7), 0 0 150px rgba(255, 255, 255, 0.5);
+  }
+  to {
+    box-shadow: 0 0 150px rgba(255, 255, 255, 0.5), 0 0 130px rgba(255, 255, 255, 0.7);
+
+  }
+}
+
+@keyframes border {
+  0% {
+    border: solid 0.4em #dfd662;
+  }
+  16.6% {
+    border: solid 0.4em #f6ad58;
+  }
+  33.3% {
+    border: solid 0.4em #fb5a60;
+  }
+  50% {
+    border: solid 0.4em #9476f6;
+  }
+  66.6% {
+    border: solid 0.4em #5c8fdd;
+  }
+  83.3% {
+    border: solid 0.4em #46cab9;
+  }
+  100% {
+    border: solid 0.4em #34e068;
+  }
+}
+
+@keyframes icon-anim{
+  0% {
+    color: #dfd662;
+  }
+  16.6% {
+    color:#f6ad58;
+  }
+  33.3% {
+    color: #fb5a60;
+  }
+  50% {
+    color: #9476f6;
+  }
+  66.6% {
+    color: #5c8fdd;
+  }
+  83.3% {
+    color: #46cab9;
+  }
+  100% {
+    color: #34e068;
+  }
+}
