@@ -184,25 +184,25 @@ i.fa-circle  {
 
 @keyframes border {
   0% {
-    border: solid 0.4em #dfd662;
+    border: solid 0.35em #dfd662;
   }
   16.6% {
-    border: solid 0.4em #f6ad58;
+    border: solid 0.35em #f6ad58;
   }
   33.3% {
-    border: solid 0.4em #fb5a60;
+    border: solid 0.35em #fb5a60;
   }
   50% {
-    border: solid 0.4em #9476f6;
+    border: solid 0.35em #9476f6;
   }
   66.6% {
-    border: solid 0.4em #5c8fdd;
+    border: solid 0.35em #5c8fdd;
   }
   83.3% {
-    border: solid 0.4em #46cab9;
+    border: solid 0.35em #46cab9;
   }
   100% {
-    border: solid 0.4em #34e068;
+    border: solid 0.35em #34e068;
   }
 }
 
