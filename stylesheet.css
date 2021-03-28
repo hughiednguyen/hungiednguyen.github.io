@@ -20,15 +20,15 @@ a {
 
 h4 {
   margin: 0.7em;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: bold;
 }
 
 h5 {
   margin: -1em;
-  font-size: 1.5em;
+  font-size: 1.3em;
+  line-height: 1.2em;
   animation: icon-anim 20s alternate-reverse infinite;
-
 }
 
 .body {
@@ -79,11 +79,11 @@ h5 {
   border-radius: 50%;
   width: 10em;
   height: 10em;
-  
+  border:solid 0.35em rgba(0, 0, 0, 0.5);
   top: 50%; left: 50%; right: auto; bottom: auto;
   transform: translate(-50%, -45%);
   position: absolute;
-  animation: border 20s alternate-reverse infinite;
+  animation: border-anim 20s alternate-reverse infinite;
 
 }
 
@@ -182,7 +182,7 @@ i.fa-circle  {
   }
 }
 
-@keyframes border {
+@keyframes border-anim {
   0% {
     border: solid 0.35em #dfd662;
   }
